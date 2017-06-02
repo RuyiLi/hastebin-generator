@@ -1,6 +1,6 @@
-var exports = module.exports = {};
+const superagent = require("superagent");
 
-exports.hastebin = function(code, language = ""){
+module.exports = (code, language = "") => {
     superagent.post("https://hastebin.com/documents")
 			.send(code)
 			.end((err, res) => {
