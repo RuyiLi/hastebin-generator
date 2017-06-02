@@ -1,11 +1,6 @@
-const superagent = require("superagent");
+const snek = require("snekfetch");
 module.exports = async function(code, language = ""){
-    let url = "https://hastebin.com/";
-    superagent.post("https://hastebin.com/documents")
-			.send(code)
-			.then(function(err, res){
-                if(err) throw err;
-				url += `${res.body.key}.${language}`;
-			});
+    let res = await snek.post("https://hastebin.com/documents").send(code).catch(console.error);
+    const url = `https://hastebin.com/${res.body.key}.${language}`;
     return url;
 }
