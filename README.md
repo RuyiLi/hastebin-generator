@@ -1,10 +1,11 @@
 # hastebin-generator
-A npm module for generating hastebin links.
+A npm module for generating hastebin links. 
+https://www.npmjs.com/package/hastebin-generator
 
-##Installation
+## Installation
 ```npm i hastebin-generator```
 
-##Example
+## Example
 ```
 const hastebin = require('hastebin-generator');
 hastebin("code", "js").then(r => {
