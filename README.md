@@ -2,7 +2,7 @@
 A npm module for generating hastebin links.
 
 ##Installation
-```npm install discordjson```
+```npm i hastebin-generator```
 
 ##Example
 ```
