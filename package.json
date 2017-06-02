@@ -1,6 +1,6 @@
 {
   "name": "hastebin-generator",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Generates a hastebin link given the code and language (optional)",
   "main": "hastebin.js",
   "dependencies": {
