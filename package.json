@@ -1,6 +1,6 @@
 {
   "name": "hastebin-generator",
-  "version": "1.0.9",
+  "version": "1.1.1",
   "description": "Generates a hastebin link given the code and language (optional)",
   "main": "hastebin.js",
   "dependencies": {
@@ -14,5 +14,13 @@
     "hastebin"
   ],
   "author": "RuyiLi",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuyiLi/hastebin-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RuyiLi/hastebin-generator/issues"
+  },
+  "homepage": "https://github.com/RuyiLi/hastebin-generator#readme"
 }
