@@ -1,11 +1,11 @@
 const superagent = require("superagent");
-
-module.exports = (code, language = "") => {
+module.exports = async function(code, language = ""){
+    let url = "https://hastebin.com/";
     superagent.post("https://hastebin.com/documents")
 			.send(code)
-			.end((err, res) => {
+			.then(function(err, res){
                 if(err) throw err;
-				let url = `https://hastebin.com/${res.body.key}.${language}`;
-				return url;
+				url += `${res.body.key}.${language}`;
 			});
+    return url;
 }
