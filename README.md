@@ -1,3 +1,12 @@
 # hastebin-generator
+A npm module for generating hastebin links.
 
-An npm module that generates a hastebin link given the code and language (optional)
+##Installation
+```npm install discordjson```
+
+##Example
+```const hastebin = require('hastebin-generator');
+
+hastebin("code", "js").then(r => {
+    console.log(r); //https://hastebin.com/sonahetugu.js
+}).catch(console.error);```

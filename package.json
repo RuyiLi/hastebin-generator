@@ -1,10 +1,10 @@
 {
   "name": "hastebin-generator",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "description": "Generates a hastebin link given the code and language (optional)",
   "main": "hastebin.js",
   "dependencies": {
-    "superagent": "^3.5.2"
+    "snekfetch": "^3.1.8"
   },
   "devDependencies": {},
   "scripts": {
