@@ -1,26 +1,25 @@
 {
   "name": "hastebin-generator",
-  "version": "1.1.2",
-  "description": "Generates a hastebin link given the code and language (optional)",
-  "main": "hastebin.js",
-  "dependencies": {
-    "snekfetch": "^3.1.8"
-  },
-  "devDependencies": {},
+  "version": "1.1.4",
+  "description": "An npm module for generating hastebin links.",
+  "main": "index.js",
   "scripts": {
-    "test": "hastebin(\"test\", \"js\")"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "hastebin"
-  ],
-  "author": "RuyiLi",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RuyiLi/hastebin-generator.git"
   },
+  "keywords": [
+    "hastebin"
+  ],
+  "author": "Ruyi Li",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/RuyiLi/hastebin-generator/issues"
   },
-  "homepage": "https://github.com/RuyiLi/hastebin-generator#readme"
+  "homepage": "https://github.com/RuyiLi/hastebin-generator#readme",
+  "dependencies": {
+    "phin": "^2.9.0"
+  }
 }
